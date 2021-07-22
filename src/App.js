@@ -54,7 +54,7 @@ function App() {
   const fetchWeather = async (e) => {
     e.preventDefault();
     const response = await Axios.get(
-      `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=7cbda39c729111aa7fe17b2e34b774b1`,
+      `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=7cbda39c729111aa7fe17b2e34b774b13`,
     );
     updateWeather(response.data);
   };
